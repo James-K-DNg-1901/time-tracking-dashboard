@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="./output.css" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body class="min-h-screen flex items-center justify-center font-rubik bg-gray-900 delay-200 translate-x-52 transition-all ease-linear">
+  <main>
+    <div id="root" class="w-81 h-auto flex flex-col gap-4 lg:flex-row lg:w-auto lg:h-100">
+      <!-- profile -->
+      <div class="w-81 h-36 bg-blue-950 rounded-2xl lg:w-60 lg:h-full ">
+        <div class="bg-violet-500 text-white w-81 h-24 flex justify-start items-center gap-5 px-8  rounded-2xl lg:w-60 lg:h-80 lg:flex-col lg:items-start lg:justify-center">
+          <img class="w-10 h-10 lg:w-20 lg:h-20 border-4 rounded-full" src="./images/image-jeremy.png" alt="avatar-img">
+          <div>
+            <p class="text-sm">Report for</p>
+            <h1 class="text-lg lg:text-3xl">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="flex justify-between mt-3 px-4 text-slate-400 lg:flex-col lg:items-start">
+          <button id="daily" class="text-white text-md hover:text-white hover:text-md">Daily</button>
+          <button id="weekly" class="hover:text-white hover:text-md">Weekly</button>
+          <button id="monthly" class="hover:text-white hover:text-md">Monthly</button>
+        </div>
+      </div>
+      <!-- detail part -->
+      <div class="flex flex-col gap-5 lg:gap-20">
+        <!-- line 1 -->
+        <div class="flex flex-col gap-5 lg:flex-row">
+          <!-- work -->
+          <div class="bg-orange-400 jdk-box-style">
+            <img src="./images/icon-work.svg" alt="icon-work">
+            <div class="jkd-detail-style">
+              <div class="jkd-value-box">
+                <b class="text-small text-white">Work</b>
+                <img src="./images/icon-ellipsis.svg" alt="icon-etc">
+              </div>
+              <div class="jkd-value-box-2">
+                <h1 class="text-4xl font-light"><span id="work-hrs">5</span>hrs</h1>
+                <p>previous - <span id="work-pre">7</span>hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- play -->
+          <div class="bg-blue-400 jdk-box-style">
+            <img src="./images/icon-play.svg" alt="icon-play">
+            <div class="jkd-detail-style hover:bg-blue-800">
+              <div class="jkd-value-box">
+                <b class="text-small text-white">Play</b>
+                <img src="./images/icon-ellipsis.svg" alt="icon-etc">
+              </div>
+              <div class="jkd-value-box-2">
+                <h1 class="text-4xl font-light"><span id="play-hrs">1</span>hrs</h1>
+                <p>previous - <span id="play-pre">2</span>hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- study -->
+          <div class="bg-red-400 jdk-box-style">
+            <img src="./images/icon-study.svg" alt="icon-work">
+            <div class="jkd-detail-style">
+              <div class="jkd-value-box">
+                <b class="text-small text-white">Study</b>
+                <img src="./images/icon-ellipsis.svg" alt="icon-etc">
+              </div>
+              <div class="jkd-value-box-2">
+                <h1 class="text-4xl font-light"><span id="study-hrs">0</span>hrs</h1>
+                <p>previous - <span id="study-pre">1</span>hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- line 2 -->
+        <div class="flex flex-col gap-5 lg:flex-row">
+          <!-- exercise -->
+          <div class="bg-green-400 jdk-box-style">
+            <img src="./images/icon-exercise.svg" alt="icon-work">
+            <div class="jkd-detail-style">
+              <div class="jkd-value-box">
+                <b class="text-small text-white">Exercise</b>
+                <img src="./images/icon-ellipsis.svg" alt="icon-etc">
+              </div>
+              <div class="jkd-value-box-2">
+                <h1 class="text-4xl font-light"><span id="exercise-hrs">1</span>hrs</h1>
+                <p>previous - <span id="exercise-pre">1</span>hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- social -->
+          <div class="bg-purple-400 jdk-box-style">
+            <img src="./images/icon-social.svg" alt="icon-play">
+            <div class="jkd-detail-style">
+              <div class="jkd-value-box">
+                <b class="text-small text-white">Social</b>
+                <img src="./images/icon-ellipsis.svg" alt="icon-etc">
+              </div>
+              <div class="jkd-value-box-2">
+                <h1 class="text-4xl font-light"><span id="social-hrs">1</span>hrs</h1>
+                <p>previous - <span id="social-pre">3</span>hrs</p>
+              </div>
+            </div>
+          </div>
+          <!-- self care -->
+          <div class="bg-yellow-400 jdk-box-style">
+            <img src="./images/icon-self-care.svg" alt="icon-work">
+            <div class="jkd-detail-style">
+              <div class="jkd-value-box">
+                <b class="text-small text-white">Self Care</b>
+                <img src="./images/icon-ellipsis.svg" alt="icon-etc">
+              </div>
+              <div class="jkd-value-box-2">
+                <h1 class="text-4xl font-light"><span id="self-care-hrs">0</span>hrs</h1>
+                <p>previous - <span id="self-care-pre">1</span>hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="../src/index.js"></script>
+</body>
+</html>

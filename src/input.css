@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.jdk-box-style {
+  @apply w-81 h-37 rounded-2xl relative lg:w-60 lg:h-40; 
+}
+
+.jkd-detail-style {
+  @apply w-81 h-22 bg-blue-950 rounded-2xl absolute top-11 lg:w-60 lg:h-40 cursor-pointer;
+  &:hover {
+    @apply bg-blue-400;
+  }
+}
+
+.jkd-hover {
+  @apply bg-blue-800
+}
+
+.jkd-value-box {
+  @apply flex items-center justify-between px-9 py-2;
+}
+
+.jkd-value-box-2 {
+  @apply text-white flex justify-between items-center px-9 py-3 lg:flex-col lg:items-start;
+}
+
+.jkd-title {
+  @apply text-small text-white;
+}

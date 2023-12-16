@@ -1,0 +1,17 @@
+{
+  "name": "time-tracking-dashboard-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
